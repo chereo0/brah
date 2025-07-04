@@ -1,0 +1,130 @@
+.shop-main {
+  background: #f7faff;
+  min-height: 100vh;
+  padding-bottom: 3rem;
+}
+.shop-header {
+  text-align: center;
+  padding: 3rem 0 2.5rem 0;
+}
+.shop-header h2 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 0.5rem;
+}
+.shop-desc {
+  color: #888;
+  font-size: 1.1rem;
+  margin-bottom: 0;
+}
+.shop-cards {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.shop-card {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 2px 16px rgba(232,140,174,0.08);
+  width: 260px;
+  min-height: 340px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  padding: 2rem 1.2rem 1.2rem 1.2rem;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.shop-card:hover {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 8px 32px rgba(232,140,174,0.16);
+}
+.shop-card-bg {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  border-radius: 16px 16px 0 0;
+  height: 60%;
+  z-index: 1;
+}
+.bg1 { background: #f8c6d8; }
+.bg2 { background: #eab7a7; }
+.bg3 { background: #e8a7c7; }
+.bg4 { background: #f7e3f0; }
+.shop-card-content {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  margin-top: 120px;
+}
+.shop-swatch {
+  display: inline-block;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  margin-right: 0.7rem;
+  box-shadow: 0 2px 8px rgba(232,140,174,0.10);
+}
+.swatch1 { background: #e88cae; }
+.swatch2 { background: #eab7a7; }
+.swatch3 { background: #e8a7c7; }
+.swatch4 { background: #f7e3f0; }
+.shop-title {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 0.2rem;
+}
+.shop-sub {
+  color: #888;
+  font-size: 1rem;
+  margin-top: 0.2rem;
+}
+@media (max-width: 1100px) {
+  .shop-cards {
+    gap: 1.2rem;
+  }
+  .shop-card {
+    width: 220px;
+    min-height: 300px;
+  }
+  .shop-card-content {
+    margin-top: 90px;
+  }
+}
+@media (max-width: 800px) {
+  .shop-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.shop-filters {
+  display: flex;
+  justify-content: center;
+  gap: 1.2rem;
+  margin-bottom: 2.5rem;
+}
+.shop-filter-btn {
+  background: #fff;
+  color: #e88cae;
+  border: 1.5px solid #e88cae;
+  border-radius: 20px;
+  padding: 0.5rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s, border 0.2s;
+  outline: none;
+}
+.shop-filter-btn.active,
+.shop-filter-btn:hover {
+  background: #e88cae;
+  color: #fff;
+  border: 1.5px solid #e88cae;
+} 
